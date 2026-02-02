@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinwemba's Portfolio</title>
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="me.png">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="#">CHIN<span>WEMBA.</span></a></div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#about" class="active">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#certifications" class="btn certifications-btn mobile-only-btn">Certifications <i
+                    class="fa-solid fa-award"></i></a>
+        </nav>
+        <a href="#certifications" class="btn certifications-btn desktop-only-btn">
+            Certifications <i class="fa-solid fa-award"></i>
+        </a>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- STARTING OF HERO SECTION -->
+    <main class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="headline-intro"> Hello, I’m <br><span class="headline-name">Oliseneku Chinwemba</span></h1>
+
+            <div class="headline-roles">
+                I'm a <span id="typed-text"></span>
+                <span class="typed-text-cursor"></span>
+            </div>
+
+            <p class="subtitle">
+                I build responsive and highly interactive websites and user interfaces, specializing in
+                transforming creative designs into robust, performant web experiences.
+            </p>
+
+            <div class="social-links">
+                <a href="https://facebook.com/yourusername" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="cta-buttons ">
+                <a href="#portfolio" class="cta-btn cta-secondary-hero">View Projects <i
+                        class="fa-solid fa-eye"></i></a>
+                <a href="#contact" class="cta-btn cta-primary-hero">Contact Me <i
+                        class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <img src="Me.png" alt="Image of a professional software developer" class="blob1">
+            </div>
+        </div>
+    </main>
+
+    <!-- STARTING OF ABOUT SECTION -->
+    <section class="about-section" id="about" data-reveal>
+        <div class="container">
+            <h2 class="about-headline">
+                Why Choose Me for Your <br><span class="highlight-text">Next Project?</span>
+            </h2>
+            <div class="about-content">
+
+                <div class="about-image-block">
+                    <div class="about-image-frame">
+                        <img src="mee.jpg" alt="Chinwemba Professional Photo" class="about-photo">
+                    </div>
+                </div>
+
+                <div class="about-text-block">
+
+                    <p class="about-intro">
+                        As a <b>Front-End Developer </b> with 2+ years of experience, I specialize
+                        in bringing beautiful designs to life using modern, performance-driven web
+                        technologies. My approach is rooted in clean code, accessibility, and exceptional
+                        user experience.
+                    </p>
+
+                    <!-- ABOUT DETAILS -->
+                    <ul class="about-details">
+                        <li><strong>Name: </strong> Chinwemba</li>
+                        <li><strong>Role: </strong> Front-End Developer</li>
+                        <li><strong>Location: </strong> Lagos, Nigeria</li>
+                        <li><strong>Email: </strong> chelseachi18@gmail.com</li>
+                        <li><strong>Experience: </strong> 2+ Years</li>
+                    </ul>
+
+                    <div class="about-cta-buttons">
+                        <a href="#" class="cta-btn primary-btn">Download CV <i class="fa fa-download"
+                                aria-hidden="true"></i></a>
+                        <a href="#portfolio" class="cta-btn secondary-btn">View My Work <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTING OF SKILLS SECTION -->
+    <section class="skills-section" id="skills" data-reveal>
+        <div class="container">
+            <h2 class="section-title">My Technical Toolbox</h2>
+            <p class="section-subtitle">Skills I use to bring ideas to life.</p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                    <h4 class="skill-name">HTML & CSS</h4>
+                    <p class="skill-description">Mastery in semantic HTML5 and modern CSS3 (Flexbox, Grid, SASS/LESS).
+                    </p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 100%;" data-progress="100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="skill-name">JavaScript (ES6+)</h4>
+                    <p class="skill-description">Proficient in core JavaScript, DOM manipulation, and asynchronous
+                        programming.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 78%;" data-progress="78%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                    <h4 class="skill-name">React / Vue</h4>
+                    <p class="skill-description">Building scalable, component-based applications with modern frameworks.
+                    </p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;" data-progress="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                    <h4 class="skill-name">Git & GitHub</h4>
+                    <p class="skill-description">Experienced in collaborative development, branching, merging, and pull
+                        requests.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;" data-progress="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h4 class="skill-name">Figma UI/UX</h4>
+                    <p class="skill-description">Building sleek, user-friendly interfaces straight from Figma.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 60%;" data-progress="60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+                    <h4 class="skill-name">PHP</h4>
+                    <p class="skill-description">
+                        Proficiency in server-side scripting, backend logic, database integration, and building dynamic
+                        web applications.
+                    </p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%;" data-progress="70%"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTING OF SERVICE SECTION -->
+    <section class="services-section" id="services" data-reveal>
+        <div class="container">
+            <h2 class="section-title">What I Offer</h2>
+            <p class="section-subtitle">Hover to discover what I can do for you</p>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <i class="fa-solid fa-code service-icon"></i>
+                            <h3 class="service-name">Web Development</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="service-name">Web Development</h3>
+                            <p class="service-description">Building responsive, high-performance websites and web
+                                applications using modern technologies and best practices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                            <h3 class="service-name">Responsive Design</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="service-name">Responsive Design</h3>
+                            <p class="service-description">Creating seamless user experiences across all devices with
+                                mobile-first design principles and adaptive layouts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <i class="fa-brands fa-react service-icon"></i>
+                            <h3 class="service-name">React Development</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="service-name">React Development</h3>
+                            <p class="service-description">Developing dynamic, interactive user interfaces with React,
+                                leveraging component-based architecture for scalable applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <i class="fa-solid fa-palette service-icon"></i>
+                            <h3 class="service-name">UI/UX Design</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="service-name">UI/UX Design</h3>
+                            <p class="service-description">Designing intuitive and visually appealing interfaces that
+                                enhance user engagement and deliver exceptional experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <i class="fa-solid fa-rocket service-icon"></i>
+                            <h3 class="service-name">Performance Optimization</h3>
+                        </div>
+                        <div class="service-card-back">
+                            <h3 class="service-name">Performance Optimization</h3>
+                            <p class="service-description">Optimizing website speed, performance, and SEO to ensure fast
+                                load times and better search engine rankings.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTING OF CONTACT SECTION -->
+    <section class="contact-section staggered-fade" id="contact" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's build something amazing together.</p>
+
+            <div class="contact-container">
+                <div class="contact-form-block">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="0b3b0bdc-3593-41f2-a4ce-956b57c0c365">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-details-block">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <h4>Location:</h4>
+                        <p class="app">Lagos, Nigeria</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email:</h4>
+                        <p class="app">chelseachi18@gmail.com</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Call:</h4>
+                        <p class="app">+234 906 205 3495</p>
+                    </div>
+                    <div class="detail-item whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp:</h4>
+                        <p class="app"><a href="https://wa.me/2349062053495" target="_blank">Chat on WhatsApp</a></p>
+                    </div>
+
+                    <h4 class="follow-heading staggered-fade">Follow Me</h4>
+                    <div class="social-links contact-social-links">
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTING OF PROJECTS SECTION -->
+    <section class="projects staggered-fade" id="portfolio" data-reveal>
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some of the things I’ve built</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="portfolio.png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-details">
+                            <h3>Portfolio Website</h3>
+                            <p>A comprehensive professional hub showcasing my journey as a developer with curated
+                                projects and certifications.</p>
+                            <a href="#" target="_blank" class="view-live-btn">View Live <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Shoe.png" alt="Shoe E-commerce">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-details">
+                            <h3>Shoe E-commerce</h3>
+                            <p>Dynamic e-commerce application with real-time cart updates and seamless checkout flow.
+                            </p>
+                            <a href="https://sole-studio-r47a.vercel.app/" target="_blank" class="view-live-btn">View
+                                Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="school.png" alt="School Website">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-details">
+                            <h3>Educational Platform</h3>
+                            <p>Multi-page platform featuring dynamic course catalog, media gallery, and integrated blog
+                                system.</p>
+                            <a href="https://chelseachi04.github.io/EduFord/" target="_blank" class="view-live-btn">View
+                                Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="sir p.jpeg" alt="React School Website">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-details">
+                            <h3>A Portfolio Website</h3>
+                            <p>A modern, fully responsive portfolio website designed to highlight my technical skills
+                                and web projects, featuring interactive UI elements and optimized performance.
+                            </p>
+                            <a href="https://chelseachi04.github.io/p-portfolio/" target="_blank"
+                                class="view-live-btn">View Live <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTING OF CERTIFICATIONS SECTION -->
+    <section class="certifications-section" id="certifications" data-reveal>
+        <div class="container">
+            <h2 class="section-title">My Professional Certifications</h2>
+            <p class="section-subtitle">Validation of my technical expertise and commitment to continuous learning.</p>
+
+            <div class="cert-grid">
+
+                <!-- TOP 3 FEATURED CERTIFICATIONS -->
+                <div class="cert-card featured-cert">
+                    <div class="featured-badge">
+                        <i class="fa-solid fa-star"></i> Featured
+                    </div>
+                    <div class="cert-info">
+                        <h3>Responsive Web Design</h3>
+                        <p class="cert-source">freeCodeCamp</p>
+                        <p>Mastered modern responsive design principles, HTML5, and CSS3 Flexbox/Grid systems.</p>
+                    </div>
+                    <a href="https://freecodecamp.org/certification/benny_v/responsive-web-design" target="_blank"
+                        class="cert-link">View Credential <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card featured-cert">
+                    <div class="featured-badge">
+                        <i class="fa-solid fa-star"></i> Featured
+                    </div>
+                    <div class="cert-info">
+                        <h3>JavaScript Algorithms and Data Structures</h3>
+                        <p class="cert-source">freeCodeCamp</p>
+                        <p>Completed 30 projects covering core JavaScript logic, algorithms, and fundamental data
+                            structures.</p>
+                    </div>
+                    <a href="https://freecodecamp.org/certification/benny_v/javascript-algorithms-and-data-structures-v8"
+                        target="_blank" class="cert-link">View Credential <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card featured-cert">
+                    <div class="featured-badge">
+                        <i class="fa-solid fa-star"></i> Featured
+                    </div>
+                    <div class="cert-info">
+                        <h3>Mastering React: Crash Course with Mini Projects</h3>
+                        <p class="cert-source">Udemy (Proper Dot Institute)</p>
+                        <p>Focused training on React fundamentals, components, state, props, and modern hooks.</p>
+                    </div>
+                    <a href="Mastering React.jpg" class="cert-link">View Credential <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+                <!-- ADDITIONAL CERTIFICATIONS (Hidden by default) -->
+
+                <div class="cert-card additional-cert" style="display: none;">
+                    <div class="cert-info">
+                        <h3>WordPress Web Development for Absolute Beginner</h3>
+                        <p class="cert-source">Udemy (Stephen Koel Soren)</p>
+                        <p>Comprehensive foundation in WordPress structure, themes, and plugin management.</p>
+                    </div>
+                    <a href="WordPress Web Development.jpg" target="_blank" class="cert-link">View Credential <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card additional-cert" style="display: none;">
+                    <div class="cert-info">
+                        <h3>Design a Website Template using HTML5</h3>
+                        <p class="cert-source">Udemy (Kioomars Jonood & Samaneh Mazidi)</p>
+                        <p>Learned how to structure and design responsive website templates using HTML5.</p>
+                    </div>
+                    <a href="Design a Website Template using HTML5.jpg" target="_blank" class="cert-link">View
+                        Credential <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+
+                <div class="cert-card additional-cert" style="display: none;">
+                    <div class="cert-info">
+                        <h3>Introduction to Cybersecurity Awareness</h3>
+                        <p class="cert-source">HP Life</p>
+                        <p>Certificate demonstrating knowledge of online threats, safe practices, and fundamental
+                            cybersecurity principles.</p>
+                    </div>
+                    <a href="Introduction to cybersecurity awerness.png" target="_blank" class="cert-link">View
+                        Credential <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card additional-cert" style="display: none;">
+                    <div class="cert-info">
+                        <h3>Introduction to Software Engineering Job Simulation</h3>
+                        <p class="cert-source">Forage/Commonwealth Bank</p>
+                        <p>A professional credential that validates proficiency in software engineering practices.</p>
+                    </div>
+                    <a href="Forage_page-0001.jpg" target="_blank" class="cert-link">View Credential <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+
+            </div>
+
+            <!-- VIEW ALL BUTTON -->
+            <div class="view-all-container">
+                <button id="viewAllBtn" class="view-all-btn">
+                    <span id="btnText">View All Certifications</span>
+                    <i class="fa-solid fa-chevron-down" id="btnIcon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STARTING OF FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Chinwemba. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <button id="backToTop" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

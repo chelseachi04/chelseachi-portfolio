@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "File",
+			"path": ".."
+		},
+		{
+			"name": "school",
+			"path": "../../PORT/school"
+		}
+	],
+	"settings": {}
+}
