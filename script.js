@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --- TYPING EFFECT LOGIC ---
     const typedTextSpan = document.getElementById("typed-text");
-    const roles = ["Front-End Developer", "Web Developer", "Designer"];
+    const roles = ["Front-End Developer", "Web Developer", "Website Designer"];
     const typingDelay = 100, erasingDelay = 50, newTextDelay = 2000;
     let roleIndex = 0, charIndex = 0;
 
