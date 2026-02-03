@@ -732,22 +732,25 @@ a {
 }
 
 .section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 1rem;
-    color: #EAEAEA;
+    margin-bottom: 25px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
     position: relative;
+    display: block;
 }
 
 .section-title::after {
     content: '';
     display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #007BFF;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #007BFF, #c9364b, #00ff9d);
     margin: 8px auto 0;
     border-radius: 2px;
+    animation: expandLine 1.5s ease-out;
 }
 
 .section-subtitle {
@@ -851,17 +854,20 @@ a {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 25px;
+    margin-top: -38px;
     color: #ffffff;
     letter-spacing: -0.5px;
     position: relative;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 .about-headline::after {
     content: '';
     position: absolute;
     bottom: -8px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80px;
     height: 4px;
     background: linear-gradient(90deg, #007BFF, #c9364b, #00ff9d);
@@ -2459,7 +2465,9 @@ h4,
 
 @media (max-width: 480px) {
     .cert-grid {
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
     }
 
     .cert-card {
@@ -2652,8 +2660,9 @@ h4,
 
     /* -------- PROJECTS SECTION -------- */
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
     }
 
     .project-card {
@@ -2791,6 +2800,10 @@ h4,
     .about-image-frame {
         width: 260px;
         height: 260px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
     }
 }
 
