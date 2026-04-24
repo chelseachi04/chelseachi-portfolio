@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --- TYPING EFFECT LOGIC ---
     const typedTextSpan = document.getElementById("typed-text");
-    const roles = ["Front-End Developer", "Web Developer", "Website Designer"];
+    const roles = ["Front-End Developer", "React Developer", "Fullstack Developer"];
     const typingDelay = 100, erasingDelay = 50, newTextDelay = 2000;
     let roleIndex = 0, charIndex = 0;
 
@@ -322,20 +322,8 @@ const initCursor = () => {
         ringX = lerp(ringX, mouseX, 0.15);
         ringY = lerp(ringY, mouseY, 0.15);
 
-        // Scroll distortion effect
-        const currentScrollY = window.scrollY;
-        scrollSpeed = Math.abs(currentScrollY - lastScrollY) * 0.05;
-        lastScrollY = currentScrollY;
 
-        const scaleX = 1 + scrollSpeed;
-        const scaleY = 1 - scrollSpeed * 0.5;
-
-        // Apply scale down on hover (0.75x) instead of enlarging
-        const hoverScale = 0.75;
-        const finalScaleX = isHovering ? hoverScale : scaleX;
-        const finalScaleY = isHovering ? hoverScale : scaleY;
-
-        ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) scale(${finalScaleX}, ${finalScaleY})`;
+       ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
 
         requestAnimationFrame(render);
     };

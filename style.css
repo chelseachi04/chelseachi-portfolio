@@ -12,15 +12,10 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: none;
 }
 
-/* Premium Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -42,7 +37,6 @@ h6 {
     transform: translateY(0);
 }
 
-/* Respect user preferences for reduced motion */
 @media (prefers-reduced-motion: reduce) {
     .reveal {
         transition: none;
@@ -51,7 +45,6 @@ h6 {
     }
 }
 
-/* Legacy animation support - can be removed if not needed */
 .staggered-fade {
     opacity: 0;
     transform: translateY(20px);
@@ -66,7 +59,9 @@ a {
     color: #EAEAEA;
 }
 
-/* --- Navigation Bar Styling --- */
+/* ============================
+         NAVIGATION BAR
+   ============================ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -87,7 +82,6 @@ a {
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Navbar Scrolled State */
 .navbar-scrolled {
     padding: 0.8rem 5%;
     background-color: rgba(26, 26, 46, 0.98);
@@ -95,12 +89,10 @@ a {
     border-bottom-width: 2px;
 }
 
-/* --- New Keyframes for Navbar Entrance --- */
 @keyframes slideInTop {
     from {
         opacity: 0;
         transform: translateY(-50px);
-        /* Start 50px above the final position */
     }
 
     to {
@@ -170,8 +162,8 @@ a {
     color: #007BFF;
 }
 
+/* BUTTON STYLE */
 .btn {
-    /* ... existing styles for padding, font-weight, etc. ... */
     padding: 0.75rem 1.5rem;
     font-weight: 600;
     border-radius: 8px;
@@ -181,21 +173,16 @@ a {
     border: none;
 }
 
-/* NEW BUTTON STYLE */
 .certifications-btn {
     display: inline-flex;
-    /* Ensures it only takes up needed space */
     align-items: center;
     justify-content: center;
     gap: 8px;
-    /* Space for the icon */
     background: linear-gradient(45deg, #007BFF, #c9364b);
     color: #EAEAEA;
     margin-left: 20px;
     width: auto;
-    /* Prevents it from being too wide */
     padding: 0.75rem 1.5rem;
-    /* Matches your .btn base style */
     border-radius: 8px;
 }
 
@@ -209,38 +196,31 @@ a {
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
 
-/* 1. HIDE THE MOBILE-ONLY BUTTON ON DESKTOP */
-.mobile-only-btn {
+/* HIDE THE MOBILE-ONLY BUTTON ON DESKTOP */
+   .mobile-only-btn {
     display: none;
 }
 
-/* 2. MOBILE MEDIA QUERY (SHOW/HIDE SWAP) */
+/* MOBILE MEDIA QUERY (SHOW/HIDE SWAP) */
 @media (max-width: 768px) {
 
-    /* HIDE THE DESKTOP BUTTON ON MOBILE */
+/* HIDE THE DESKTOP BUTTON ON MOBILE */
     .desktop-only-btn {
-        display: none;
+    display: none;
     }
 
 
     /* SHOW THE MOBILE BUTTON INSIDE THE MENU */
-    /* SHOW THE MOBILE BUTTON INSIDE THE MENU */
     .mobile-only-btn {
         display: inline-flex;
-        /* Allows button to wrap its content */
         align-items: center;
         justify-content: center;
         width: auto;
-        /* Prevents button from stretching to 100% width */
         max-width: 160px;
-        /* Optional: sets a professional maximum width */
         margin: 20px auto 0;
-        /* Centers the button horizontally in the menu */
         padding: 0.6rem 1.2rem;
-        /* Reduces internal space to make it less "wide" */
         color: #EAEAEA;
         border-radius: 50px;
-        /* Keeps it consistent with your other pill-shaped buttons */
     }
 }
 
@@ -251,7 +231,9 @@ a {
     color: #ffffff;
 }
 
-/* --- Media Queries for Nav --- */
+/* ============================
+       MEDIA QUERIES FOR NAV
+   ============================ */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -293,7 +275,9 @@ a {
 
 }
 
-/* --- Hero Section Styling --- */
+/* ========================
+     HERO SECTION STYLING
+   ======================== */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -416,7 +400,9 @@ a {
     margin-bottom: 10px;
 }
 
-/* Social-links */
+/* ===================
+      SOCIAL-LINKS
+   =================== */
 .social-links {
     display: flex;
     gap: 15px;
@@ -466,7 +452,9 @@ a {
     opacity: 0;
 }
 
-/* CTA BUTTONS STYLE --- HERO SECTION STYLES --- */
+/* ============================
+    CTA BUTTONS --- HERO SECTION
+   ============================ */
 .cta-buttons {
     display: flex;
     gap: 15px;
@@ -554,11 +542,11 @@ a {
 .cta-btn:active {
     transform: translateY(-1px) scale(0.98);
     box-shadow: none;
-    /* Reset shadow on click for a flat press look */
 }
 
-
-/* --- HERO IMAGE Hexagon with Pulsing Gradient Border --- */
+/* =====================
+        HERO IMAGE
+   ===================== */
 .placeholder-image {
     position: relative;
     width: 400px;
@@ -606,7 +594,9 @@ a {
     }
 }
 
-/* --- HERO MEDIA QUERIES --- */
+/* =====================
+    HERO IMAGE QUERIES
+   ===================== */
 @media (max-width: 1024px) {
     .hero-section {
         flex-direction: column;
@@ -938,7 +928,7 @@ a {
     margin-bottom: 35px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px 25px;
+    gap: 10px;
     font-size: 1.05rem;
     color: #EAEAEA;
 }
@@ -2269,7 +2259,6 @@ h4,
         0 0 40px rgba(201, 54, 75, 0.2);
 }
 
-/* Additional Certs - Hidden by default */
 .additional-cert {
     display: none;
 }
@@ -2410,7 +2399,6 @@ h4,
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Certifications Responsive */
 @media (max-width: 1100px) {
     .cert-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2507,7 +2495,6 @@ h4,
    ============================ */
 @media (max-width: 480px) {
 
-    /* -------- GLOBAL FIXES -------- */
     body {
         overflow-x: hidden;
     }
@@ -2522,7 +2509,6 @@ h4,
         padding: 0;
     }
 
-    /* -------- NAVBAR -------- */
     .logo {
         font-size: 1.3rem;
     }
@@ -2531,7 +2517,9 @@ h4,
         font-size: 1.6rem;
     }
 
-    /* -------- HERO SECTION -------- */
+    /* =================
+        HERO SECTION
+    ================= */
     .hero-section {
         flex-direction: column;
         justify-content: center;
@@ -2580,7 +2568,9 @@ h4,
         max-width: 280px;
     }
 
-    /* -------- HERO IMAGE -------- */
+    /* ================
+        HERO IMAGE
+    ================ */
     .hero-image {
         order: 1;
         display: flex;
@@ -2594,7 +2584,9 @@ h4,
         aspect-ratio: 1 / 1;
     }
 
-    /* -------- ABOUT SECTION -------- */
+    /* ===============
+        ABOUT SECTION
+    =============== */
     .about-content {
         flex-direction: column;
         text-align: center;
@@ -2636,7 +2628,9 @@ h4,
         align-items: center;
     }
 
-    /* -------- SKILLS SECTION -------- */
+    /* =================
+       SKILLS SECTION
+    ================= */
     .skills-grid {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -2647,7 +2641,9 @@ h4,
         max-width: 320px;
     }
 
-    /* -------- SERVICES SECTION -------- */
+    /* ====================
+       SERVICES SECTION
+    ==================== */
     .services-grid {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -2658,7 +2654,9 @@ h4,
         max-width: 340px;
     }
 
-    /* -------- PROJECTS SECTION -------- */
+    /* =================
+    PROJECT SECTION
+    ================= */
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -2671,7 +2669,9 @@ h4,
         height: 170px;
     }
 
-    /* -------- CONTACT SECTION -------- */
+   /* ==================
+      CONTACT SECTION
+   ================== */
     .contact-container {
         flex-direction: column;
         align-items: center;
@@ -2694,7 +2694,9 @@ h4,
         font-size: 1rem;
     }
 
-    /* -------- FOOTER -------- */
+   /* ==============
+     FOOTER SECTION
+   ============== */
     .footer {
         font-size: 0.85rem;
         padding: 1.2rem 1rem;
@@ -2702,9 +2704,9 @@ h4,
 }
 
 
-/* ===================================================
-   RESPONSIVENESS: TABLETS (1024px and below)
-   =================================================== */
+/* =====================================
+   RESPONSIVENESS: 1024px,768px, 480px
+   ================================== */
 @media (max-width: 1024px) {
     .hero-section {
         flex-direction: column;
@@ -2716,18 +2718,15 @@ h4,
     .hero-content {
         max-width: 100%;
         order: 2;
-        /* Moves text below image */
     }
 
     .hero-image {
         order: 1;
-        /* Moves image to top */
         margin-bottom: 1rem;
     }
 
     .placeholder-image {
         width: 320px;
-        /* Scaled down for tablet */
         height: 320px;
     }
 
@@ -2736,15 +2735,11 @@ h4,
         gap: 30px;
     }
 
-    .about-text-block,
-    .about-image-block {
+    .about-text-block, .about-image-block {
         max-width: 100%;
     }
 }
 
-/* ===================================================
-   RESPONSIVENESS: SMARTPHONES (768px and below)
-   =================================================== */
 @media (max-width: 768px) {
     .headline-intro span {
         font-size: 2.8rem;
@@ -2756,13 +2751,9 @@ h4,
 
     .about-details {
         grid-template-columns: 1fr;
-        /* Single column for list */
     }
 }
 
-/* ===================================================
-   SMALL SMARTPHONES (Infinix / 480px and below)
-   =================================================== */
 @media (max-width: 480px) {
     .hero-section {
         padding-top: 6rem;
@@ -2778,13 +2769,11 @@ h4,
 
     .placeholder-image {
         width: 240px;
-        /* Smaller hexagon for small phones */
         height: 240px;
     }
 
     .cta-buttons {
         flex-direction: column;
-        /* Stack buttons vertically */
         width: 100%;
     }
 
@@ -2811,7 +2800,6 @@ h4,
     .nav-links a {
         margin-left: 5px;
         font-size: 0.85rem;
-        /* Slightly smaller to fit everything */
     }
 
     .certifications-btn.desktop-only-btn {
@@ -2851,31 +2839,16 @@ h4,
 /* ==========================
    CUSTOM CURSOR SYSTEM
 ========================== */
-body {
+a, button, .cta-btn, .view-live-btn, .cert-link, .logo, .menu-toggle, [role="button"] {
     cursor: none;
-    /* Hide default cursor */
 }
 
-a,
-button,
-.cta-btn,
-.view-live-btn,
-.cert-link,
-.logo,
-.menu-toggle,
-[role="button"] {
-    cursor: none;
-    /* Ensure interactive elements don't show default cursor */
-}
-
-.cursor-dot,
-.cursor-ring {
+.cursor-dot, .cursor-ring {
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
     z-index: 10000;
-    /* Higher than navbar */
     border-radius: 50%;
     transform: translate3d(-50%, -50%, 0);
     will-change: transform;
@@ -2893,7 +2866,6 @@ button,
     width: 38px;
     height: 38px;
     border: 2px solid transparent;
-    /* Transparent to show gradient */
     background: linear-gradient(#1A1A2E, #1A1A2E) padding-box,
         linear-gradient(45deg, #007BFF, #c9364b, #00ff9d) border-box;
     transition: width 0.3s ease, height 0.3s ease, transform 0.1s ease-out, opacity 0.3s ease;
@@ -2910,49 +2882,37 @@ button,
     }
 }
 
-/* Hover States - Scale DOWN now */
 .cursor-active .cursor-ring {
-    width: 28px;
-    /* Slightly smaller */
-    height: 28px;
-    background: linear-gradient(45deg, #007BFF, #c9364b, #00ff9d) border-box;
-    /* Only border-box to be lightweight */
-    border: 1.5px solid transparent;
-    opacity: 0.8;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 1.5px solid #00ff9d;
+    opacity: 0.5;
 }
 
 .cursor-active .cursor-dot {
     transform: translate3d(-50%, -50%, 0);
-    /* Keep centered and original size */
     background-color: #00ff9d;
 }
 
-/* Mobile/Touch Device Fallback */
 @media (hover: none) and (pointer: coarse) {
 
-    .cursor-dot,
-    .cursor-ring {
+    .cursor-dot, .cursor-ring {
         display: none !important;
     }
 
-    body,
-    a,
-    button {
+    body, a, button {
         cursor: auto !important;
     }
 }
 
-/* Respect Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
 
-    .cursor-dot,
-    .cursor-ring {
+    .cursor-dot, .cursor-ring {
         display: none !important;
     }
 
-    body,
-    a,
-    button {
+    body, a, button {
         cursor: auto !important;
     }
 }
