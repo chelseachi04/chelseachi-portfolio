@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --- TYPING EFFECT LOGIC ---
     const typedTextSpan = document.getElementById("typed-text");
-    const roles = ["Front-End Developer", "React Developer", "Fullstack Developer"];
+    const roles = ["Front-End Developer", "React Developer", "Web Developer", "UI/UX Designer"];
     const typingDelay = 100, erasingDelay = 50, newTextDelay = 2000;
     let roleIndex = 0, charIndex = 0;
 
@@ -52,33 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     if (typedTextSpan) setTimeout(type, 1000);
-
-    // --- MODAL LOGIC ---
-    const projectItems = document.querySelectorAll(".project-item");
-    const modal = document.getElementById("projectModal");
-    const closeBtn = document.querySelector(".close-btn");
-    const modalDetails = document.querySelector(".modal-details");
-
-    const projectData = {
-        web1: {
-            title: "Shoe E-commerce Website",
-            category: "Web Development",
-            description: "A dynamic e-commerce application built with React, featuring real-time cart updates and state-driven product filtering.",
-            tools: ["React", "Vite", "SASS"],
-            image: "Shoe.png",
-            liveUrl: "https://sole-studio-r47a.vercel.app/",
-            repoUrl: "#"
-        },
-        web2: {
-            title: "Portfolio Website",
-            category: "Web Development",
-            description: "A comprehensive professional hub designed to showcase my journey as a developer.",
-            tools: ["HTML5", "CSS3", "JavaScript"],
-            image: "portfolio.png",
-            liveUrl: "#",
-            repoUrl: "#"
-        }
-    };
+    
 
     projectItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -338,3 +312,51 @@ if (!('ontouchstart' in window) && !window.matchMedia('(prefers-reduced-motion: 
     // Show default cursor for touch/reduced motion
     document.body.style.cursor = 'auto';
 }
+
+
+// ========================================
+// SKILLS CATEGORY FILTER
+// ========================================
+
+const skillCategoryButtons = document.querySelectorAll(".skill-category-btn");
+const skillCards = document.querySelectorAll(".skill-card");
+
+function filterSkills(category) {
+
+    skillCards.forEach(card => {
+
+        if (card.dataset.category === category) {
+            card.classList.remove("skill-hidden");
+        } else {
+            card.classList.add("skill-hidden");
+        }
+
+    });
+
+}
+
+skillCategoryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        // Remove active state from all buttons
+        skillCategoryButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        // Add active state to clicked button
+        button.classList.add("active");
+
+        // Get selected category
+        const category = button.dataset.category;
+
+        // Filter skills
+        filterSkills(category);
+
+    });
+
+});
+
+
+// Show Frontend Development by default
+filterSkills("frontend");
