@@ -751,6 +751,9 @@ a {
 }
 
 /* --- ABOUT SECTION STYLING --- */
+.about-details li.full-width {
+    grid-column: 1 / -1;
+}
 .about-section {
     padding: 5rem 5% 5rem;
     background: linear-gradient(135deg, #111122 0%, #1A1A2E 50%, #0a0a1a 100%);
@@ -929,7 +932,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    font-size: 1.05rem;
+    font-size: 1.03rem;
     color: #EAEAEA;
 }
 
